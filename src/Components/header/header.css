@@ -1,0 +1,89 @@
+#header{height: calc(100vh - 70px);
+    width: 100%;
+    background: url("../../assets/nosvg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.content{
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    position: relative;
+}
+
+.note{
+    line-height: 1.4;
+    letter-spacing: 1.5px;
+    position: relative;
+}
+
+.note span{
+    color: blueviolet;
+    font-size: 3rem;
+}
+
+.btn__header{
+    position: absolute;
+    right: 0;
+    bottom: -4rem;
+    margin-top: 1.5rem;
+    font-weight: 700;
+    color: blueviolet;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn__header:hover{
+    color: var(--sec-color);
+}
+
+/* media queries */
+
+@media screen and (max-width:850px){
+    #header{
+        background-size: cover;
+        height: 90vh;
+    }
+
+    #header::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0,0.9);
+        z-index: -1;
+
+    }
+
+    .content{
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+   .btn__header{
+    position: relative;
+    bottom: 0;
+   }
+
+   .btn__header:hover{
+    color: var(--pry-color);
+    border-color: var(--pry-color);
+   }
+
+    .note{
+       color: var(--pry-color);
+    }
+
+    .note span{
+        font-size: 2rem;
+    }
+}
