@@ -26,7 +26,7 @@ export default function Nav() {
             
           }}
         >
-          <a href="/"><span>Y</span>usuf <span>A</span>bolaji</a></motion.h1>
+          <a href="#"><span>Y</span>usuf <span>A</span>bolaji</a></motion.h1>
         <ul>
           <motion.li className={activeNav === '#' ? 'active': " "} onClick={()=> setActiveNav('#')}
             animate={{

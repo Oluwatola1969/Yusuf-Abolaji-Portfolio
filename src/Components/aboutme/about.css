@@ -1,3 +1,119 @@
 .about__title{
     text-align: center;
+    margin-bottom: 2rem;
+}
+
+.about__title h2{
+    color: transparent;
+    -webkit-text-stroke: 1.5px var(--sec-color);
+}
+
+.about__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+
+.about__img img{
+    object-fit: contain;
+    margin:  auto;
+    background: var(--pry-color);
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.about__img img:hover{
+    padding: 2rem;
+}
+
+.about__me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    transition: var(--transition);
+}
+
+.about__cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__about{
+    width: 9rem;
+    height: 8rem;
+    padding: 1.5rem;
+    background: var(--pry-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    transition: var(--transition);
+
+    border-radius: 1rem;
+}
+
+.card__about:hover{
+    transform: translateY(-3px);
+}
+
+.card__about .icon__about{
+    font-size: 1.5rem;
+}
+
+.card__about:hover .icon__about{
+    color: var(--accent-color);
+}
+
+.about__btn a:hover .about__icon{
+    animation: anim 2s infinite both                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ;
+}
+
+@keyframes anim {
+    from{opacity: 0; transform: translateY(-5px);}
+    to{opacity: 1; transform: translateY(0px);}
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 1024px) {
+    .about__content{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about__me{
+        align-items: center;
+    }
+
+    .about__cards{
+        gap: 1rem;
+    }
+
+    .about__me_text{
+        width: 70%;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .about__cards{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .card__about{
+        width: 12rem;
+    }
 }

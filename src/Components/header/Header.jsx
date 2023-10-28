@@ -1,6 +1,9 @@
 import "./header.css"
 import {CiLocationArrow1} from 'react-icons/ci';
 import {motion} from "framer-motion";
+import {FiLinkedin } from "react-icons/fi"
+import {FiFacebook} from "react-icons/fi"
+import {FaXTwitter} from "react-icons/fa6"
 
 
 function Header() {
@@ -17,7 +20,7 @@ function Header() {
                 duration:2
               }}
             >
-                Welcome 👋, <br />I'm <span> YUSUF ABOLAJI</span> <br /> a Product Manager passionate about  <br />innovative digital designs
+                Welcome <span className="wave">👋</span>, <br />I'm <span> YUSUF ABOLAJI</span> <br /> a Product Manager passionate about  <br />innovative digital designs
             </motion.h2>
             <motion.a href="/"
              className="btn btn__header"
@@ -27,6 +30,17 @@ function Header() {
              >
               Get in Touch <CiLocationArrow1 size={23} />
               </motion.a>
+
+              <motion.div className="header__socials"
+              animate={{opacity:1}}
+              initial={{opacity:0}}
+              transition={{delay:2}}
+              >
+              <a href="https://www.facebook.com/profile.php?id=100076252556017&mibextid=LQQJ4d"><FiFacebook className="icon"/></a>
+              <a href="http://linkedin.com/in/yusuf-abolaji"><FiLinkedin/></a>
+              <a href="https://twitter.com/yac_grillo"><FaXTwitter/></a>
+              
+              </motion.div>
           </div>
         </div>
     </section>

@@ -36,6 +36,12 @@ body {
   --border-radius3: 0.8rem; 
 }
 
+.darkmode{
+  --pry-color : black;
+  --sec-color: white;
+  --neutral-color : #ccc;
+}
+
 section{
   padding-block: 10rem;
   background: var(--pry-color);
@@ -58,7 +64,27 @@ section > h2 {
 
 a{
   text-decoration: none;
+  color: var(--accent-color);
 }
+
+/* p, h1, h2, h3{
+    animation: scrolll ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+}
+
+@keyframes scrolll {
+  from{
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+} */
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
@@ -101,9 +127,9 @@ img{
   display: flex;
   align-items: center;
   gap: 1rem;
-  background-color: transparent;
-  color: var(--sec-color);
-  border: 2px solid var(--accent-color);
+  background-color: var(--sec-color);
+  color: var(--pry-color);
+  border: 2px solid transparent;
   border-radius: var(--border-radius2);
   padding: 0.6rem 2.5rem;
   cursor: pointer;
@@ -111,8 +137,8 @@ img{
 }
 
 .btn:hover{
-  background-color: transparent;
-  border-color: var(--sec-color);
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 @media screen and (max-width: 1240px){
@@ -145,6 +171,10 @@ img{
   .container{
     max-width: var(--container-sm);
     margin: auto;
+  }
+
+  section{
+    padding-block: 5rem;
   }
 }
 
