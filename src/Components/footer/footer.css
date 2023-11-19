@@ -71,7 +71,7 @@ footer small{
 
 @media screen and (max-width:1024px){
     footer{
-        padding: 2rem 4rem 4.2rem;
+        padding: 2rem 4rem 4rem;
         text-align: center;
     }
 
@@ -79,5 +79,9 @@ footer small{
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
+    }
+
+    footer small{
+        margin-bottom: 2rem;
     }
 }

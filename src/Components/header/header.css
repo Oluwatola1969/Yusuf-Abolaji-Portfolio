@@ -1,9 +1,11 @@
 #header{
-    height: calc(100vh - 100px);
     width: 100%;
     background: url("../../assets/nosvg.png");
     background-repeat: no-repeat;
     background-size: contain;
+    display: flex;
+    place-items: center;
+    line-height: 1rem;
 }
 
 .content{
@@ -80,8 +82,9 @@
 
 @media screen and (max-width:850px){
     #header{
+        /* height: fit-content; */
         background-size: cover;
-        height: 90vh;
+        margin-top: 50px;
         color: var(--sec-color);
     }
 
@@ -106,3 +109,4 @@
         font-size: 2rem;
     }
 }
+

@@ -43,6 +43,10 @@
     gap: 0.5rem;
 }
 
+.contact__details a{
+    color: var(--sec-color);
+}
+
 .contact__details span{
     color: var(--accent-color);
 }

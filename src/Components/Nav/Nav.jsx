@@ -90,7 +90,7 @@ export default function Nav() {
                 delay:0.4
               }}
           >
-            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
           </motion.li>
         </ul>
       </div>

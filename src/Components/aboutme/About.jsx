@@ -5,11 +5,13 @@ import aboutimg from '../../assets/nosvg.png';
 import {HiOutlineDownload} from "react-icons/hi";
 import {MdPeopleOutline} from 'react-icons/md';
 import {BsPatchCheck} from 'react-icons/bs'
-import {SlBadge} from 'react-icons/sl'
+import {SlBadge} from 'react-icons/sl';
+import {motion} from 'framer-motion'
+
 
 export const About = () => {
   return (
-    <section id="about">
+    <motion.section id="about" >
         <div className="container about__container">
           <div className="about__title"><h2>About <span>Me</span></h2>
             <h5>Introduction</h5>
@@ -26,7 +28,7 @@ export const About = () => {
                     <SlBadge/>
                   </div>
                   <h4>Experience</h4>
-                  <h6>6+ Years working</h6>
+                  <h6>4+ Years working</h6>
                 </div>
                 <div className="card__about">
                   <div className="icon__about">
@@ -44,7 +46,8 @@ export const About = () => {
                 </div>
               </div>
 
-              <p className="about__me_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quam! Necessitatibus voluptatum ipsum earum error, perferendis eius in enim modi nisi magni? Officiis, similique. Voluptas nobis culpa illum magni nostrum, omnis voluptatem.</p>
+              <p className="about__me_text">Yusuf Abolaji is a fortified Product Manager whose goal is to focus on creating and managing products that solves real problems for users.<br/> In a world where customer needs are constantly evolving and competition is fierce, some businesses can't really afford to waste resources on products that don't hit the mark.
+                That’s why I have a mission to steer products towards success and ensure they meet user needs and also achieve business goals.</p>
 
               <div className="about__btn">
                 <a href={cv}download className="btn">Download CV <HiOutlineDownload className="about__icon"/></a>
@@ -56,6 +59,6 @@ export const About = () => {
 
 
         </div>
-    </section>
+    </motion.section>
   );
 };
